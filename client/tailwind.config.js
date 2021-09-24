@@ -15,6 +15,11 @@ module.exports = {
       'secondary-btn-bg': 'hsl(198, 60%, 50%)',
       'error-color': 'hsl(0, 100%, 63%)',
     }),
+    textColor: {
+      'link-hover': 'hsl(198, 60%, 50%)',
+      'primary': '#fff',
+      'secondary': 'hsl(216, 53%, 9%)',
+    },
   },
   variants: {
     extend: {},
