@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://test123:test123@cluster0.ijh9r.mongodb.net/snippify?retryWrites=true&w=majority",
+    "jwtSecret": "secrettoken"
+}

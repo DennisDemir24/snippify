@@ -1,14 +1,19 @@
 const express = require('express')
+const connectDB = require('./config/db')
+
 const app = express()
-require('dotenv').config()
+const PORT = process.env.PORT || 5000
 
-app.get('/', (req, res) => {
-    res.send('Hello World!')
+// Connect Database
+connectDB()
+
+// Init middleware
+app.use(express.json({ extended: false }))
+
+// Define our Routes
+app.use('/api/users', require('./routes/users'))
+app.use('/api/snippets', require('./routes/snippets'))
+
+app.listen(PORT, () => {
+  console.log(`Server started on ${PORT}`)
 })
-
-const port = process.env.PORT || 5000
-
-const start = () => {
-    app.listen(port, () => console.log(`Server started on port ${port}`))
-}
-start()
