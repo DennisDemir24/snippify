@@ -15,7 +15,7 @@ const SnippetSchema = new Schema({
     type: String,
     required: true,
   },
-  skills: {
+  tags: {
     type: [String],
     required: true,
   },
