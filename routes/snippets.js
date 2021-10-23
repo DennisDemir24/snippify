@@ -34,4 +34,13 @@ router.post('/', auth, async (req, res) => {
     }
 })
 
+// @route  PUT api/contacts/:id
+// @desc Update contact
+// @access Private
+
+
+// @route  DELETE api/contacts/:id
+// @desc DELETE contact
+// @access Private
+
 module.exports = router

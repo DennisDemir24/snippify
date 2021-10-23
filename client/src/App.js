@@ -4,10 +4,11 @@ import Navbar from './components/UI/Navbar'
 import Login from './components/Auth/Login'
 import Snippets from './components/Snippets/Snippets'
 import './index.css'
+import SnippetState from './context/snippet/SnippetState'
 
 const App = () => {
   return (
-    <div className="">
+    <SnippetState>
       <Router>
         <>
           <Navbar />
@@ -19,7 +20,7 @@ const App = () => {
           </div>
         </>
       </Router>
-    </div>
+    </SnippetState>
   )
 }
 

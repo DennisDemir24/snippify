@@ -14,6 +14,7 @@ module.exports = {
       'primary-btn-bg': 'hsl(176, 68%, 64%)',
       'secondary-btn-bg': 'hsl(198, 60%, 50%)',
       'error-color': 'hsl(0, 100%, 63%)',
+      'primary-bg': '#fff'
     }),
     textColor: {
       'link-hover': 'hsl(198, 60%, 50%)',
