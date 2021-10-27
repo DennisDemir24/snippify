@@ -10,7 +10,8 @@ const Snippets = () => {
   useEffect(() => {
     getSnippets()
   }, [])
-
+  
+  console.log(snippets)
   return (
     <>
       {snippets !== null &&
